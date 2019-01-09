@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid $border-grey;
+    border-bottom: 1px solid $border-grey;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+        background:#292929;
+        color: #FFFFFF;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        border-left: 0;
+        border-bottom: 0;
+        border-top: 1px solid $border-grey;
+        padding: 20px 5px;
+    }
+}
+
+.expand-click{
+    background: $orange; 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}

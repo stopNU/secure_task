@@ -1,0 +1,149 @@
+@import './variables';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.667;
+  letter-spacing: 0.001em;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.001em;
+  line-height: 1;
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.001em;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+h4{
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.001em;
+  line-height: 1.875;
+  color: #333333;
+}
+
+h5{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.001em;
+  font-size: 26px;
+  line-height: 1.385;
+}
+
+h6{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.143;
+  letter-spacing: 0.001em;
+}
+
+ul{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.143;
+  letter-spacing: 0.001em;
+  color: #333333;
+}
+
+.black{
+  color: #000000;
+}
+
+.orange{
+  color: $orange;
+}
+
+.faded{
+  color: $font-hint;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.noPadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.hidden-mobile{
+  @media screen and (max-width: 766px) {
+    display: none;
+  }
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.row-eq-height {
+  @media screen and (min-width: 766px) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  }
+}
+
+.text-line-left{
+  border-left: 3px solid #da491c;
+  padding-left: 15px;
+}
+
+.button{
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 2.571;
+  padding: 5px 50px;
+  &:hover{
+    background: $orange !important;
+  }
+}

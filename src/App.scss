@@ -1,0 +1,76 @@
+@import 'variables';
+@import "~video-react/styles/scss/video-react";
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./assets/hero-bg.png") no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  @media screen and (min-width: $breakpoint-lg) {
+    min-height: 665px;
+  }
+  color: $white;
+}
+
+.achievements{
+  background: url("./assets/achievements-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  color: $white;
+  p.highlight{
+    display: inline; 
+    font-size: 36px; 
+    line-height: 1;
+  }
+}
+
+.mobile{
+  background: url("./assets/mobile-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+h1{
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: 42px;
+  }
+}
+
+img.phones{
+  position: absolute;
+  bottom: 0;
+  max-height: 400px;
+  @media screen and (max-width: $breakpoint-lg) {
+    max-width: 300px;
+  }
+}
+img.person{
+  position: absolute;
+  bottom: 0;
+  max-height: 400px;
+  @media screen and (max-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+ul.rc-menu{
+  position: absolute;
+  width:100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+}
+.rc-menu-horizontal{
+  border-bottom: none;
+}
+.rc-menu-horizontal > .rc-menu-submenu-active, .rc-menu-horizontal > .rc-menu-item-active, .rc-menu-item-selected{
+  color: $orange;
+  background-color: inherit;
+  border-bottom-color: $orange;
+}
+.rc-menu-submenu > .rc-menu, .rc-menu-item-active, .rc-menu-submenu-active > .rc-menu-submenu-title{
+  background-color:rgba(0, 0, 0, 0.5);
+}

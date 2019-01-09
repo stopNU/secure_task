@@ -1,0 +1,14 @@
+@import '../variables';
+
+button.read-more-btn{
+    background-color: transparent;
+    color: $font-gray;
+    border: none;
+    border-bottom: 1px solid $font-gray;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-radius: 0;
+}
